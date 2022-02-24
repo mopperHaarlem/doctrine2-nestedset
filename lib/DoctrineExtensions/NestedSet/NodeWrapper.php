@@ -436,10 +436,10 @@ class NodeWrapper implements Node
 
         if($includeRoot === false)
         {
-            return implode(array_slice($this->outlineNumbers, 1), $separator);
+            return implode($separator,array_slice($this->outlineNumbers, 1));
         }
 
-        return implode($this->outlineNumbers, $separator);
+        return implode($separator, $this->outlineNumbers);
     }
 
 
